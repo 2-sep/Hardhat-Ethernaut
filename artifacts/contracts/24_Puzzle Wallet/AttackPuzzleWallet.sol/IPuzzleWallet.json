@@ -1,6 +1,6 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "ILevel",
+  "contractName": "IPuzzleWallet",
   "sourceName": "contracts/24_Puzzle Wallet/AttackPuzzleWallet.sol",
   "abi": [
     {
