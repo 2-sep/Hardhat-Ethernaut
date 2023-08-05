@@ -36,78 +36,6 @@
         "Fallback"
       ]
     },
-    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\02_Fallout\\Fallout.sol": {
-      "lastModificationDate": 1690465562804,
-      "contentHash": "0c73f39fa0056209240e2a91f51e9b46",
-      "sourceName": "contracts/02_Fallout/Fallout.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../library/SafhMath.sol"
-      ],
-      "versionPragmas": [
-        "^0.6.0"
-      ],
-      "artifacts": [
-        "Fallout"
-      ]
-    },
-    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\library\\SafhMath.sol": {
-      "lastModificationDate": 1690542135316,
-      "contentHash": "ae3e3cce772627dcf5a4f67b8abc97c0",
-      "sourceName": "contracts/library/SafhMath.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.6.12"
-      ],
-      "artifacts": [
-        "SafeMath"
-      ]
-    },
     "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\03_CoinFlip\\AttackCoinFlip.sol": {
       "lastModificationDate": 1690519308564,
       "contentHash": "0484a1aee6a411b37bc3d890db191f83",
@@ -248,41 +176,6 @@
       ],
       "artifacts": [
         "Telephone"
-      ]
-    },
-    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\05_Token\\Token.sol": {
-      "lastModificationDate": 1690531828309,
-      "contentHash": "b96ff094416b31f7d60b62023e3b5502",
-      "sourceName": "contracts/05_Token/Token.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.6.0"
-      ],
-      "artifacts": [
-        "Token"
       ]
     },
     "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\06_Delegation\\Delegation.sol": {
@@ -496,43 +389,6 @@
         "King"
       ]
     },
-    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\10_Re-entrancy\\Reentrance.sol": {
-      "lastModificationDate": 1690542151280,
-      "contentHash": "d064ede68dc3f83687d9978e96f6cc79",
-      "sourceName": "contracts/10_Re-entrancy/Reentrance.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../library/SafhMath.sol"
-      ],
-      "versionPragmas": [
-        "^0.6.12"
-      ],
-      "artifacts": [
-        "Reentrance"
-      ]
-    },
     "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\10_Re-entrancy\\AttackReentrance.sol": {
       "lastModificationDate": 1690553986317,
       "contentHash": "28756761a1ad4cdb54a79ceafce26cee",
@@ -711,6 +567,1093 @@
       ],
       "artifacts": [
         "Privacy"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\13_Gatekeeper One\\AttackGatekeeperOne.sol": {
+      "lastModificationDate": 1690612511724,
+      "contentHash": "bb875195f80e0951667b3c878f626b70",
+      "sourceName": "contracts/13_Gatekeeper One/AttackGatekeeperOne.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AttackGatekeeperOne",
+        "IGateKeeperOne"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\13_Gatekeeper One\\GatekeeperOne.sol": {
+      "lastModificationDate": 1690609054451,
+      "contentHash": "8b494964f7796c674cb3fe20c2dd5e30",
+      "sourceName": "contracts/13_Gatekeeper One/GatekeeperOne.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GatekeeperOne"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\14_Gatekeeper Two\\AttackGatekeeperTwo.sol": {
+      "lastModificationDate": 1690621905201,
+      "contentHash": "3cb82a472dbd3ff8b8db5df01fdd62b6",
+      "sourceName": "contracts/14_Gatekeeper Two/AttackGatekeeperTwo.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AttackGatekeeperTwo",
+        "IGatekeeperTwo"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\14_Gatekeeper Two\\GatekeeperTwo.sol": {
+      "lastModificationDate": 1690621128820,
+      "contentHash": "ad1d585bc77ca501518c2ee68be8a96d",
+      "sourceName": "contracts/14_Gatekeeper Two/GatekeeperTwo.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GatekeeperTwo"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\15_Naught Coin\\NaughtCoin.sol": {
+      "lastModificationDate": 1690622560593,
+      "contentHash": "1d66aa3be5ac6d134a6ed8ac05239ff5",
+      "sourceName": "contracts/15_Naught Coin/NaughtCoin.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NaughtCoin"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1690440761326,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1690440761388,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1690440761294,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1690440761388,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\22_Dex\\Dex.sol": {
+      "lastModificationDate": 1690669918372,
+      "contentHash": "187e57ded558090f3b7e7fe7bad50ba9",
+      "sourceName": "contracts/22_Dex/Dex.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Dex",
+        "SwappableToken"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1690440761419,
+      "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\16_Preservation\\AttackPreservation.sol": {
+      "lastModificationDate": 1690628627583,
+      "contentHash": "31eb7e38032f7c15eddc2ead17dd9071",
+      "sourceName": "contracts/16_Preservation/AttackPreservation.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AttackPreservation"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\16_Preservation\\Preservation.sol": {
+      "lastModificationDate": 1690626483486,
+      "contentHash": "7a7dbc8bde1ab2b26e778c489cc16b27",
+      "sourceName": "contracts/16_Preservation/Preservation.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LibraryContract",
+        "Preservation"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\17_Recovery\\Recovery.sol": {
+      "lastModificationDate": 1690638873883,
+      "contentHash": "001f97d20a22227eabd78df5ed8babd9",
+      "sourceName": "contracts/17_Recovery/Recovery.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Recovery",
+        "SimpleToken"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\18_MagicNumber\\MagicNumber.sol": {
+      "lastModificationDate": 1690646753240,
+      "contentHash": "813c7354a6db66c58deaa5bdfb96dcef",
+      "sourceName": "contracts/18_MagicNumber/MagicNumber.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MagicNum"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\19_Alien Codex\\AttackAlienCodex.sol": {
+      "lastModificationDate": 1690651448066,
+      "contentHash": "5e264f81109e611e85396aec79e15b12",
+      "sourceName": "contracts/19_Alien Codex/AttackAlienCodex.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AttackAlienCodex",
+        "IAlienCodex"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\20_Denial\\Denial.sol": {
+      "lastModificationDate": 1690653823590,
+      "contentHash": "86fa4fcb730bf3a0dba713b4c897b2a9",
+      "sourceName": "contracts/20_Denial/Denial.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Denial"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\21_Shop\\AttackShop.sol": {
+      "lastModificationDate": 1690668891658,
+      "contentHash": "b062153a1ea5416c0ee7d1edf527f2c4",
+      "sourceName": "contracts/21_Shop/AttackShop.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AttackShop",
+        "IShop"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\21_Shop\\Shop.sol": {
+      "lastModificationDate": 1690667594787,
+      "contentHash": "9aaad98a5c313f11402a478f5ed1897e",
+      "sourceName": "contracts/21_Shop/Shop.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Buyer",
+        "Shop"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\02_Fallout\\Fallout.sol": {
+      "lastModificationDate": 1690465562804,
+      "contentHash": "0c73f39fa0056209240e2a91f51e9b46",
+      "sourceName": "contracts/02_Fallout/Fallout.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../library/SafhMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Fallout"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\library\\SafhMath.sol": {
+      "lastModificationDate": 1690542135316,
+      "contentHash": "ae3e3cce772627dcf5a4f67b8abc97c0",
+      "sourceName": "contracts/library/SafhMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\10_Re-entrancy\\Reentrance.sol": {
+      "lastModificationDate": 1690549540391,
+      "contentHash": "d064ede68dc3f83687d9978e96f6cc79",
+      "sourceName": "contracts/10_Re-entrancy/Reentrance.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../library/SafhMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "Reentrance"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\05_Token\\Token.sol": {
+      "lastModificationDate": 1690531828309,
+      "contentHash": "b96ff094416b31f7d60b62023e3b5502",
+      "sourceName": "contracts/05_Token/Token.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\library\\Address.sol": {
+      "lastModificationDate": 1691210515651,
+      "contentHash": "2f9260286bc9e73065a6b442c794764e",
+      "sourceName": "contracts/library/Address.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\library\\UpgradeableProxy.sol": {
+      "lastModificationDate": 1691210467771,
+      "contentHash": "26a4f025a815b0d71de9acc22e124033",
+      "sourceName": "contracts/library/UpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableProxy"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\library\\Proxy.sol": {
+      "lastModificationDate": 1691210499539,
+      "contentHash": "ce8a2d5dbc645f14fcdab233920d5b75",
+      "sourceName": "contracts/library/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\19_Alien Codex\\AlienCodex.sol": {
+      "lastModificationDate": 1690648984762,
+      "contentHash": "aea0277e3bb431cd13691ff5251844b2",
+      "sourceName": "contracts/19_Alien Codex/AlienCodex.sol",
+      "solcConfig": {
+        "version": "0.5.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../library/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "AlienCodex"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\library\\Ownable.sol": {
+      "lastModificationDate": 1690648939119,
+      "contentHash": "ecf50e7d58cb21ba9c69ceefc28a8c37",
+      "sourceName": "contracts/library/Ownable.sol",
+      "solcConfig": {
+        "version": "0.5.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\24_Puzzle Wallet\\PuzzleWallet.sol": {
+      "lastModificationDate": 1691210423254,
+      "contentHash": "86f21843389ca127592818da17e89774",
+      "sourceName": "contracts/24_Puzzle Wallet/PuzzleWallet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../library/UpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PuzzleProxy",
+        "PuzzleWallet"
+      ]
+    },
+    "E:\\code\\web3\\Hardhat-Ethernaut\\contracts\\24_Puzzle Wallet\\AttackPuzzleWallet.sol": {
+      "lastModificationDate": 1691212838884,
+      "contentHash": "bfe61c9527f3861aede189b8016a8ae3",
+      "sourceName": "contracts/24_Puzzle Wallet/AttackPuzzleWallet.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.14"
+      ],
+      "artifacts": [
+        "ILevel",
+        "PuzzleProxyRun"
       ]
     }
   }
