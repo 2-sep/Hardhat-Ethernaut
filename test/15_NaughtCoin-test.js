@@ -14,7 +14,7 @@ describe("CoinFlip", () => {
     return { contract, deployer, attacker }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, deployer, attacker } = await loadFixture(deployFallbackFixture)
 
     // 代币授权

@@ -21,7 +21,7 @@ describe("CoinFlip", () => {
     return { attacker, contract, deployAddress }
   }
 
-  it("Should get more tokens ", async () => {
+  it("attack and check", async () => {
     const { attacker, contract, deployAddress } = await loadFixture(deployFallbackFixture)
 
     // 攻击者攻击

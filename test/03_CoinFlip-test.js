@@ -18,7 +18,7 @@ describe("CoinFlip", () => {
     return { contract, attackContract }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attackContract } = await loadFixture(deployFallbackFixture)
 
     // 攻击合约进行attack()

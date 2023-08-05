@@ -18,7 +18,7 @@ describe("Elevator", () => {
     return { contract, attackContract, attacker }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attackContract, attacker } = await loadFixture(deployFallbackFixture)
 
     console.log(await contract.top())
@@ -28,7 +28,7 @@ describe("Elevator", () => {
 
     console.log(await contract.top())
 
-    // 断言：被攻击合约的连胜应为10
+    //
     // expect(await contract.consecutiveWins()).to.equal(10)
 
   })

@@ -17,7 +17,7 @@ describe("Fallout", () => {
     return { deployer, attacker, contract, deployerAddress, attackerAddress, contractAddress }
   }
 
-  it("Should claim ownership", async () => {
+  it("attack and check", async () => {
     const { deployer, attacker, contract, deployerAddress, attackerAddress, contractAddress } = await loadFixture(deployFallbackFixture)
 
     // 构建攻击者的Fal1out交互

@@ -21,7 +21,7 @@ describe("Reentrance", () => {
     return { contract, attacker, attackContract }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attacker, attackContract } = await loadFixture(deployFallbackFixture)
 
     // 攻击合约进行attack()

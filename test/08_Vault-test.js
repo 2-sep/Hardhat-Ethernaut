@@ -16,7 +16,7 @@ describe("Vault", () => {
     return { contract, attacker }
   }
 
-  it("Should unclock the vault", async () => {
+  it("attack and check", async () => {
     const { attacker, contract } = await loadFixture(deployFallbackFixture)
 
     // 访问存储插槽

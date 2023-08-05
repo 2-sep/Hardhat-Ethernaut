@@ -18,7 +18,7 @@ describe("GatekeeperTwo", () => {
     return { contract, attackContract, attacker }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attackContract, attacker } = await loadFixture(deployFallbackFixture)
 
     // 攻击合约进行attack()

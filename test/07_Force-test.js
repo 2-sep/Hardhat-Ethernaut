@@ -18,7 +18,7 @@ describe("Force", () => {
     return { attacker, contract, attackContract }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { attacker, contract, attackContract } = await loadFixture(deployFallbackFixture)
 
     console.log(await ethers.provider.getBalance(await contract.getAddress()))

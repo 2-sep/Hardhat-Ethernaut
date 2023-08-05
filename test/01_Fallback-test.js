@@ -17,7 +17,7 @@ describe("Fallback", () => {
     return { deployer, attacker, fallback, deployerAddress, attackerAddress, fallbackAddress }
   }
 
-  it("Should claim ownership", async () => {
+  it("attack and check", async () => {
     const { deployer, attacker, fallback, deployerAddress, attackerAddress, fallbackAddress } = await loadFixture(deployFallbackFixture)
 
     // 部署者的地址 = 合约owner

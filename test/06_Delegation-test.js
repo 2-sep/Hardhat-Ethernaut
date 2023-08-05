@@ -19,7 +19,7 @@ describe("Delegation", () => {
     return { attacker, contract, delegate }
   }
 
-  it("Should claim ownership ", async () => {
+  it("attack and check", async () => {
     const { attacker, contract, delegate } = await loadFixture(deployFallbackFixture)
 
     console.log(`攻击前Delegation的owner为${await contract.owner()}`)

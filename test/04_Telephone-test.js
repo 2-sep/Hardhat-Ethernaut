@@ -20,11 +20,9 @@ describe("Telephone", () => {
     return { contract, attackAddress }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attackAddress } = await loadFixture(deployFallbackFixture)
 
-
-    // 断言：被攻击合约的连胜应为10
     expect(await contract.owner()).to.equal(attackAddress)
 
   })

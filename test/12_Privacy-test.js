@@ -18,7 +18,7 @@ describe("Privacy", () => {
     return { contract, attacker }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attacker } = await loadFixture(deployFallbackFixture)
 
     // 访问存储插槽
@@ -32,7 +32,7 @@ describe("Privacy", () => {
     const attackTx = await contract.connect(attacker).unlock(key)
     await attackTx.wait()
 
-    // 断言：被攻击合约的连胜应为10
+    //
     console.log(await contract.locked())
     expect(await contract.locked()).to.equal(false)
 

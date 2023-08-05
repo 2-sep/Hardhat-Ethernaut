@@ -19,7 +19,7 @@ describe("CoinFlip", () => {
     return { contract, attackContract }
   }
 
-  it("attack", async () => {
+  it("attack and check", async () => {
     const { contract, attackContract } = await loadFixture(deployFixture)
 
     // 攻击合约进行attack()

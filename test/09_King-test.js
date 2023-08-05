@@ -20,7 +20,7 @@ describe("King", () => {
     return { deployer, attacker, contract, attackContract }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { deployer, attacker, contract, attackContract } = await loadFixture(deployFallbackFixture)
 
     try {
