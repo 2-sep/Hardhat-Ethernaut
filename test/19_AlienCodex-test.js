@@ -17,7 +17,7 @@ describe("CoinFlip", () => {
     return { contract, attackContract, attacker }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attackContract, attacker } = await loadFixture(deployFallbackFixture)
 
     // 攻击合约进行attack()
@@ -28,8 +28,6 @@ describe("CoinFlip", () => {
     console.log(r)
     console.log(attacker.address)
 
-    // 断言：被攻击合约的连胜应为10
-    // expect(await contract.consecutiveWins()).to.equal(10)
 
   })
 })

@@ -28,7 +28,7 @@ describe("CoinFlip", () => {
     const transferTx = await contract.connect(attacker).transferFrom(deployer.address, attacker.address, amount)
     await transferTx.wait()
 
-    // 断言：被攻击合约的连胜应为10
+    // 
     expect(await contract.balanceOf(deployer.address)).to.equal(0)
 
   })

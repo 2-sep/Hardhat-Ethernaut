@@ -1,6 +1,20 @@
+**1_Fallback**
+
+题干：（1）获得合约的所有权 （2）将余额减少为 0。可以改变 owner 的方法 contribute()和 receive()
+
+解题思路：receive()的逻辑漏洞
+
+**2_Fallout**
+
+题干：获得合约所有权
+
+SafhMath.sol 是防止整型数据溢出的计算库
+
+解题思路：旧版构造函数名打错
+
 **3_CoinFlip**
 
-目标：抛硬币，预测结果连胜 10 次
+题干：抛硬币，预测结果连胜 10 次
 
 解题思路:**伪随机**
 
@@ -8,7 +22,7 @@
 
 **4_Telephont**
 
-目标：改变所有权
+题干：改变所有权
 
 解题思路：**tx.origin 与 msg.sender 的不同**
 
@@ -16,27 +30,31 @@
 
 **5_Token**
 
-目标：获得更多的 Token
+题干：获得更多的 Token
 
-解题思路：**整型溢出**，EVM 只能表示特定范围的数字
+解题思路：**整型溢出**，EVM 只能表示特定范围的数字，solidity 0.8 前不会检查整型溢出
 
 无论转账多少，合约中 balances[msg.sender]的检查都不会生效。转账超过余额，完成下溢
 
 **6_Delegation**
 
-目标：获得合约 Degation 的权限
+题干：获得合约 Degation 的权限
 
 解题思路：**delegatecall**
 
+B 合约 delegatecallC 合约，执行的是 B 的环境改变，改变的也是 B 的状态变量，C 合约只做逻辑处理
+
 **7_Force**
 
-目标：强制向合约转账
+题干：强制向合约转账
 
 解题思路：**合约自毁**
 
+如果一个合约没有接收 eth 的处理函数，无法接受转账。但合约自毁可以强制向其转账
+
 **8_Vault**
 
-目标：解锁 vault
+题干：解锁 vault
 
 解题思路：**插槽访问**
 
@@ -44,21 +62,25 @@
 
 **9_King**
 
-目标：变成 King，并阻止别人变成 King
+题干：变成 King，并阻止别人变成 King
 
 解题思路：**智能合约 拒绝服务**
 
+在攻击合约中设置，收到 eth，revert()
+
 **10_Re-entrancy**
 
-目标：偷取合约的所有资金
+题干：偷取合约的所有资金
 
-解题思路：**重入攻击**
+解题思路：**重入漏洞**
+
+预防：使用 检查-影响-交互模式书写逻辑 使用重入锁
 
 **11_Elevator**
 
-目标：将 top 值改为 true
+题干：将 top 值改为 true
 
-解题思路：**攻击合约**
+解题思路：
 
 理解 Building building = Building(msg.sender); 的本质
 
@@ -66,13 +88,15 @@
 
 **12_Privacy**
 
-目标：解锁合约
+题干：解锁合约
 
 解题思路：**私有变量访问**
 
+定长数据类型的存储
+
 **13_GateKeeper One**
 
-目标：过门
+题干：过门
 
 解题思路：**gas 计算，类型转换 **
 
@@ -90,7 +114,7 @@
 
 **14_GatekeeperTwo**
 
-目标：过门
+题干：过门
 
 解题思路：**内联汇编**
 
@@ -102,7 +126,7 @@
 
 **15_Naught Coin**
 
-目标：在锁定期内转移代币
+题干：在锁定期内转移代币
 
 解题思路：**transferFrom** ERC20
 
@@ -110,9 +134,9 @@
 
 **16_Preservation**
 
-目标：获得合约的所有权
+题干：获得合约的所有权
 
-解题思路：**delegatecall 时的插槽存储冲突问题**
+解题思路：**call 注入攻击 delegatecall 时的插槽存储冲突问题**
 
 第一次 delegatecall，改变 timeZone1Library
 
@@ -120,21 +144,23 @@
 
 **17_Recovery**
 
-目的：找到丢失的合约地址
+题干：找到丢失的合约地址
 
 解题思路：**智能合约地址预测**
+
+用户 A 调用智能合约 B 创建智能合约 C，创建者是智能合约 B。A 和 B 的 nonce 都会增加。目前不确定智能合约还会在哪种情况下增加 nonce
 
 ethers.getCreateAddress({from: , nonce: })
 
 **18_MagicNumber**
 
-目的：
+题干：
 
 解题思路：**Opcodes**
 
 **19_Alien Codex**
 
-目的：获得所有权
+题干：获得所有权
 
 解题思路：**动态数组的存储布局**
 
@@ -142,7 +168,7 @@ https://blog.dixitaditya.com/ethernaut-level-19-alien-codex
 
 攻击数组长度，使其下溢（所有存储空间都是动态数组的范围，使得 slot[0]可以被赋值）
 
-动态数组元素的起始存储位置:keccak256(array slot)（slot 下标）
+动态数组元素的起始存储位置:keccak256(其索引的 slot)
 
 keccak256(1)+ X = 0 = 2^256-1 + 1
 
@@ -158,13 +184,15 @@ keccak256(1)+ X = 0 = 2^256-1 + 1
 
 目的：购买成功，并使 price 价格降低
 
-解题思路：
+解题思路：判断逻辑。让攻击合约的 price 和 Shop 的 isSold 挂钩
 
 **22_Dex**
 
 目的：
 
 解题思路：
+
+**23_Dex Two**
 
 **24_Puzzle Wallet**
 
@@ -182,17 +210,23 @@ proxy 和 impl 的 storage 存在冲突，(1)可以通过 delegatecall setMaxBal
 
 **25_Motorbike**
 
-题干：
+题干：？？？
 
 解题思路：
 
 **26_DoubleEntryPoint**
 
-题干：
+题干：？？？
 
 解题思路：
 
-**27**
+**27_Good Samaritan**
+
+题干：取走钱包中所有的份额。入口函数 GoodSamaritan.requestDonation()
+
+解题思路：利用 Coin.transfer 中的 INotifyable(dest*).notify(amount*);恶意触发 revert "NotEnoughBalance()"
+
+如果一个合约的 mapping 类型是 public，但没有声明 getter 函数，ethers.js 该怎么获得呢？如果通过 slot 是不是太麻烦了
 
 **28_GateKeeper Three**
 
@@ -211,3 +245,39 @@ gateTwo()：allowEntrance，利用 trick.checkPassword()
 https://blog.softbinator.com/solving-ethernaut-level-29-switch/
 
 设计 calldata，改变偏移量，满足 onlyOff 的同时，进行 turnSwitchOn()调用
+
+```
+一般情况下动态类型的Calldata编码
+0x
+30c13ade	->函数选择器
+0000000000000000000000000000000000000000000000000000000000000020	->偏移量
+0000000000000000000000000000000000000000000000000000000000000004	->长度
+20606e1500000000000000000000000000000000000000000000000000000000	->实际值
+```
+
+```
+应对题目onlyOff()检查
+30c13ade-> 功能选择器
+
+0000000000000000000000000000000000000000000000000000000000000060-> 偏移量，现在 = 96 字节
+
+0000000000000000000000000000000000000000000000000000000000000000-> 额外字节
+
+20606e1500000000000000000000000000000000000000000000000000000000-> 这里是对字节的检查68，但与调用无关
+
+0000000000000000000000000000000000000000000000000000000000000004-> 数据长度
+
+76227e1200000000000000000000000000000000000000000000000000000000-> turnSwitchOn()的选择器
+```
+
+https://ethernaut.openzeppelin.com/
+
+https://github.com/OpenZeppelin/ethernaut/blob/master/contracts/contracts/levels/Motorbike.sol
+
+https://www.youtube.com/watch?v=MaGAVBRwvbg&list=PLiAoBT74VLnmRIPZGg4F36fH3BjQ5fLnz D-Squared
+
+https://www.youtube.com/watch?v=TQKj2xvsGec&list=PLO5VPQH6OWdWh5ehvlkFX-H3gRObKvSL6 Smart Contract Programmer
+
+https://dev.to/bin2chen/ethernautxi-lie-level-26doubleentrypoint-27i5 全解
+
+https://github.com/bin2chen66/ethernaut/blob/main/contracts/26DoubleEntryPointRun.sol

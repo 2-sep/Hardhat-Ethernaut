@@ -31,7 +31,7 @@ describe("Preservation", () => {
     return { contract, attacker, attackContract }
   }
 
-  it("Should consecutiveWins ", async () => {
+  it("attack and check", async () => {
     const { contract, attacker, attackContract } = await loadFixture(deployFallbackFixture)
 
     console.log(`攻击前Preservation的owner：${await contract.owner()}`)
